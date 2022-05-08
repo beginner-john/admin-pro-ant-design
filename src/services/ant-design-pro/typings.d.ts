@@ -23,13 +23,35 @@ declare namespace API {
     phone?: string;
   };
 
+  type OauthToken = {
+    access_token?: string;
+    token_type?: string;
+    refresh_token?: string;
+    expires_in?: string;
+    scope?: string;
+    jti?: string;
+  };
+
   type LoginResult = {
     status?: string;
+    code?: number;
     type?: string;
     currentAuthority?: string;
   };
 
   type PageParams = {
+    current?: number;
+    pageSize?: number;
+  };
+
+  type PageParamsV2 = {
+    page?: number;
+    pageSize?: number;
+  };
+
+  type PageInfoResult = {
+    totalPages?: number;
+    totalElements?: number;
     current?: number;
     pageSize?: number;
   };
@@ -98,4 +120,31 @@ declare namespace API {
     description?: string;
     type?: NoticeIconItemType;
   };
+
+
+  type UserListItem = {
+    id?: number;
+    username?: string;
+    password?: string;
+    phone?: string;
+    sex?: string;
+    status?: number;
+    isAdmin?: number;
+    createTime?: string;
+    createBy?: number;
+    updateTime?: string;
+    updateBy?: number;
+    roleList?: any;
+  };
+  
+  type UserList = {
+    content?: UserListItem[];
+    code?: number;
+    message?: string;
+    pageInfo?: PageInfoResult;
+  };
+
+
+
+
 }

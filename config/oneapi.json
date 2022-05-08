@@ -392,6 +392,9 @@
           "status": {
             "type": "string"
           },
+          "code": {
+            "type": "number"
+          },
           "type": {
             "type": "string"
           },

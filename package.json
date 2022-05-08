@@ -1,5 +1,5 @@
 {
-  "name": "ant-design-pro",
+  "name": "c",
   "version": "5.0.0",
   "private": true,
   "description": "An out-of-box UI solution for enterprise applications",
@@ -104,5 +104,19 @@
   },
   "gitHooks": {
     "commit-msg": "fabric verify-commit"
-  }
+  },
+  "main": "jest.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beginner-john/admin-pro-ant-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beginner-john/admin-pro-ant-design/issues"
+  },
+  "homepage": "https://github.com/beginner-john/admin-pro-ant-design#readme"
 }

@@ -64,4 +64,10 @@ export default {
   'pages.searchTable.tenThousand': '万',
   'pages.searchTable.batchDeletion': '批量删除',
   'pages.searchTable.batchApproval': '批量审批',
+
+  'pages.add': '新建',
+  'pages.edit': '编辑',
+  'pages.remove': '删除',
+
+  'pages.user.createForm.newUser': '新建用户',
 };

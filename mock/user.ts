@@ -97,7 +97,7 @@ export default {
     });
   },
   // GET POST 可省略
-  'GET /api/users': [
+  'GET /api/user': [
     {
       key: '1',
       name: 'John Brown',

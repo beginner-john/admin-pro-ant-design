@@ -25,6 +25,23 @@
     component: './Welcome',
   },
   {
+    path: '/userManager',
+    name: 'userManager',
+    icon: 'crown',
+    access: 'canAdmin',
+    routes: [
+      {
+        path: '/userManager/users',
+        name: 'users',
+        icon: 'smile',
+        component: './users/index',
+      },
+      {
+        component: './404',
+      },
+    ],
+  },
+  {
     path: '/admin',
     name: 'admin',
     icon: 'crown',

@@ -12,6 +12,20 @@ export async function currentUser(options?: { [key: string]: any }) {
   });
 }
 
+/**  
+ * 获取token接口
+ * post /api/oauth/token
+ */
+export async function getUserToken(body: API.LoginParams, options?: { [key: string]: any }) {
+  return request<{
+    data: API.CurrentUser;
+  }>('/api/oauth/token', {
+    method: 'POST',
+    data: body,
+    ...(options || {}),
+  });
+}
+
 /** 退出登录接口 POST /api/login/outLogin */
 export async function outLogin(options?: { [key: string]: any }) {
   return request<Record<string, any>>('/api/login/outLogin', {
@@ -60,7 +74,7 @@ export async function rule(
   });
 }
 
-/** 新建规则 PUT /api/rule */
+/** 修改规则 PUT /api/rule */
 export async function updateRule(options?: { [key: string]: any }) {
   return request<API.RuleListItem>('/api/rule', {
     method: 'PUT',
